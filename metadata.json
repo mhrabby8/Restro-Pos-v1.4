@@ -1,0 +1,8 @@
+{
+  "name": "v.1.4 RR Restro POS",
+  "description": "Enterprise-grade restaurant and food cart POS with multi-branch management, inventory, accounting, and offline capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
