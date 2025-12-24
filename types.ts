@@ -39,6 +39,16 @@ export interface User {
   permissions?: string[]; // List of navigation IDs the user can access
 }
 
+export interface Customer {
+  id: string;
+  name: string;
+  phone: string;
+  points: number;
+  totalSpend: number;
+  totalOrders: number;
+  createdAt: number;
+}
+
 export interface WithdrawalRequest {
   id: string;
   userId: string;
@@ -151,6 +161,8 @@ export interface Order {
   customerName?: string;
   createdAt: number;
   userId: string;
+  loyaltyPointsEarned?: number;
+  loyaltyPointsRedeemed?: number;
 }
 
 export interface AccountingEntry {
@@ -179,4 +191,6 @@ export interface SystemSettings {
   logoUrl?: string;
   vatPercentage: number;
   defaultDiscount: number;
+  pointsEarnRate: number; // e.g. 1 point per 100 currency
+  pointsRedeemRate: number; // e.g. 1 point = 1 currency
 }

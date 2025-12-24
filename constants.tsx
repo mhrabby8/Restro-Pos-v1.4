@@ -8,6 +8,8 @@ export const DEFAULT_SETTINGS = {
   currencyCode: 'TK',
   vatPercentage: 0,
   defaultDiscount: 0,
+  pointsEarnRate: 100, // 1 point per 100 currency
+  pointsRedeemRate: 1, // 1 point = 1 currency
 };
 
 export const INITIAL_CATEGORIES = [
